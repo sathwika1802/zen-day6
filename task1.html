@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         class movie{                        //created a class movie
+            constructor(name,studio,rating){
+                this.name=name,             //used this keyword to represent parameters
+                this.studio=studio,
+                this.rating=rating
+                if(this.rating==null){      //if rating is null rating becomes"PG"
+                    this.rating="PG"
+                }
+                
+            }
+            getPg(array){                   //
+                var arr="";
+            for(var i=0;i<array.length;i++){
+                if(array[i].rating=="PG"){
+                    console.log(array[i]);
+                    arr+=array[i].name+" ";
+                }
+                }
+                console.log(arr);
+            }
+                
+        }
+            
+            
+                
+                
+        var s1=new movie("casino royal","eon productions")
+        var s2=new movie("raj","koti")
+        var s3=new movie("sathwi","stella","pg13")
+        var s4=new movie("pradeep","kavuri","PG")
+        //console.log(s1);
+        var array=[s1,s2,s3,s4];
+        console.log(array);
+        s1.getPg(array)
+        //s2.germovies()
+        //s3.germovies()
+    </script>
+</body>
+</html>

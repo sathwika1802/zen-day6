@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class person{
+            constructor(name,age,place,program){
+                this.name=name,
+                this.age=age,
+                this.place=place,
+                this.program=program
+            }getname(){
+                console.log("My name is",this.name)
+            }
+            getage(){
+                console.log("I am",this.age,"years old")
+            }
+            getplace(){
+                console.log("I am from",this.place)
+            }
+            getprogram(){
+                console.log("I am learning",this.program)
+            }
+            
+            getoutput(){
+                console.log("My name is",this.name,"I am",this.age,"years old","I am from",this.place,"and I am learning",this.program)
+            }
+        }
+        var s1=new person("sathwika",25,"guntur","javascript")
+        //s1.getname()
+        //s1.getage()
+        //s1.getplace()
+        //s1.getprogram()
+        s1.getoutput()
+    </script>
+</body>
+</html>

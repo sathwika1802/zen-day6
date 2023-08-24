@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class circle{
+            constructor(radius,color){
+                this.radius=radius,
+                this.color=color
+                console.log("radius:",radius);
+                console.log("radius:",radius,"color:",color);
+            }
+            getRadius(){
+                var r=this.radius
+                console.log(r);
+            }
+            getColor(){
+                var c=this.color
+                console.log(c)
+            }
+            getArea(){
+                var area=(Math.PI)*this.radius*this.radius;
+                console.log("area:",area)
+            }
+            getPerimeter(){
+                var perimeter=2*(Math.PI)*this.radius;
+                console.log("perimeter:",perimeter)
+            }
+        }
+        var c1=new circle(1.0,"red")
+        c1.getRadius();
+        c1.getColor();
+        c1.getArea();
+        c1.getPerimeter();
+    </script>
+</body>
+</html>
