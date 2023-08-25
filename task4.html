@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class uber{
+            constructor(distance,waitingPeriod,timetaken){
+                this.distance=distance,
+                this.waitingPeriod=waitingPeriod,
+                this.timetaken=timetaken
+            }
+            
+                getFare(){
+                    var disFare=parseInt(this.distance)*100
+                    var Wpfare=parseInt(this.waitingPeriod)*5
+                    var timeFare=parseInt(this.timetaken)*100
+                    var fare=parseInt(disFare)+parseInt(Wpfare)+parseInt(timeFare)
+                    console.log(fare)
+
+                }
+                getWPfare(){
+                    var Wpfare=parseInt(this.waitingPeriod)*5
+                }
+                getTimeFare(){
+                    var timeFare=parseInt(this.timetaken)*100
+                }
+           
+
+        }
+        var u1=new uber(10,10,2)
+        u1.getFare()
+    </script>
+</body>
+</html>
